@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:cd2f6b3e839f361cfe1fc7b29a0de62477c69ce2d8a8a37d99a56cc33323a15d",
+  "pageVersion": "sha256:b37ea938308cb592aa212c90218bcd22e2a46a23b1ebee323f9aa89c8d00b6f0",
   "claims": [
     {
       "id": "claim_39d16b04ebe7470596ddea3aaf2ce833",
@@ -142,15 +142,19 @@
     },
     {
       "id": "claim_ae29eec6cd0f45b4b75326f4f10f40d6",
-      "statement": "The builder emits ordinary OSS markdown for both Python and JS, but emits Deep Agents Code and OpenWiki once with Python selection; ordinary LangSmith markdown is built once with Python selection while Managed Deep Agents pages emit Python and JavaScript routes. Snippet markdown is independently preprocessed into language-prefixed copies and a Python-default base copy.",
+      "statement": "Shared OSS Markdown is emitted for the language or languages that list its route in docs.json: a route in exactly one language navigation is built only for that target, while a route in both or neither is built for both. Deep Agents Code and OpenWiki are emitted once with Python selection; ordinary LangSmith Markdown is built once with Python selection while Managed Deep Agents pages emit Python and JavaScript routes. Snippet Markdown is independently preprocessed into language-prefixed copies and a Python-default base copy.",
       "evidence": [
         {
-          "resource": "repo://pipeline/core/builder.py#L1216-L1271",
-          "version": "repo-lines-v1:sha256:0b04688df776fbcaa3ef4a8adb8e9f36fb7e3c7b7b090e03f242f465b3e2f135:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkOWU3ODA1NzRhNDQ0Y2JkYjQ5MmNmZmY5MjFmZjkxNGY1MzczMTc3YWI4MTAzMjM2M2E0ZDBjNjk4MjE0NjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5MGVkNTI3OGExZDZiOWE2MzgyMmNmODNhYmVjODQyMDQ4ODliM2ZhNGY0MDRhNmNiNjU1NGNjYjRlOWYzMzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc4MDQzYTVjYjJjYWIzNzhjN2M5Y2Y1OWFhZjY4NGIxNTAyMGE1MDEyZmRhYWI5YWMyYjY0Yzc4NzE3M2U4OGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNlZDQ4NTAxNmY4ZDc4MjMwZWNjNzVmNzFmM2Y0MzM4OWVkYTE2MjlkZDc1NzJmMzJmNjQ1YTAzMjczOGY1NzAifQ"
+          "resource": "repo://pipeline/core/builder.py#L1349-L1372",
+          "version": "repo-lines-v1:sha256:2354ffa085928104916901d3d77077fc83773413ea5ff1ac3b1b3b23c22670c2:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwNDI0Yjc5MmY0NjhiMjk2ZWY2MjdmMmIxOWQ4NDlhZDJiMjk2YmJhYmU0YTEzNTI0YzJiNjQ2Yzc4YWQzODMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5MGVkNTI3OGExZDZiOWE2MzgyMmNmODNhYmVjODQyMDQ4ODliM2ZhNGY0MDRhNmNiNjU1NGNjYjRlOWYzMzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNiMWRiMDhlOGQyMWUzZTNlNWFjODFlOTg2YmFkOGNhODkxZTEwNWJhMzQ0YTYwMTQ3NzI3MjZjZjZhZmM4NWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNlZDQ4NTAxNmY4ZDc4MjMwZWNjNzVmNzFmM2Y0MzM4OWVkYTE2MjlkZDc1NzJmMzJmNjQ1YTAzMjczOGY1NzAifQ"
         },
         {
-          "resource": "repo://pipeline/core/builder.py#L452-L540",
-          "version": "repo-lines-v1:sha256:e527591d8b7d2cb6e2692b0076aa5547a206dfdc814199cfbea4471949113320:eyJzZWxlY3RlZExpbmVDb3VudCI6ODksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMDJmNDMwNjk4NzUwMTU0OWQ3OTdhMDg4YzY1ZWNmN2Q0MTU3MzhiM2ExYmEzNDNkZjNkZTA1ZWI2OTc5ZTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3OWI3MTI4ZmQ1NzVkZGZjYTlkZTM1NzIxZTEzNmM0YTU1NWQzMTY0ZmE2YTZkMTIxYTNmMDBkOGNiODc5MzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU2YThiNjYxNmY3NjY0MjMzY2IyZjlmYzM5Njg4MWQ3NmU3MjVjMDkyNGRmMGNiMmIyNjBhMWM1YTBkM2U4ODQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgzMmIxYmFjZTZmNzZlZWI4OTZkNjczZWM2NDU3MDc4ZjZlZThmNjcyMzI2ZjcwZGI2NmY3ZDQ4ZjlkMDdlYWQifQ"
+          "resource": "repo://pipeline/core/builder.py#L522-L577",
+          "version": "repo-lines-v1:sha256:82be542d5b6100d5b4a48582f8f3c34bf7eb586cdde9a1345f56663c3eb95e48:eyJzZWxlY3RlZExpbmVDb3VudCI6NTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYwYjZiZGM1NjQ3Y2UwMmFjNTJjOTVkYjRkNTczYzhiNmJmYmJlYWEyNzFjZTZlZTE4NzMxYjc2NzJlY2UzYzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0YWRhMTdkMDI2MGJiZmY4ZTE3MDVlYmQ1MDk5ZTUxNGI2ZTA2Nzg5YzdkOTM4MDdiYTIzYzZiYzU1OGFmNjgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJhMTI5MWY1YjExZDY2OTRlMzIxY2I5MDZjYjI5YmNiMzQwNjk4OWY3M2QzY2JjOTYyNTYxMDQxOWJmMjEzNzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU3MmM4ZDY3MWJjNmExZTYwMjhjMjdmNzE0NGNkNWQzNTA0ZTAwNGY1YTcxOTJhOWUzZTA3NzYwNDczOTYyYmIifQ"
+        },
+        {
+          "resource": "repo://pipeline/core/builder.py#L581-L635",
+          "version": "repo-lines-v1:sha256:01d81f526a17aefd424f4d25590a96fc4606eb2cd365f5de1d727e22fc520f71:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjljOWUxMjA3MmZkNjFjZmU5YzJhOGMyMjUwMGY3YThkODUyY2UwY2UzMmZlNWY3NjQ1NDQ5ODhiMWI4MjE5MDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3OWI3MTI4ZmQ1NzVkZGZjYTlkZTM1NzIxZTEzNmM0YTU1NWQzMTY0ZmE2YTZkMTIxYTNmMDBkOGNiODc5MzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU3MmM4ZDY3MWJjNmExZTYwMjhjMjdmNzE0NGNkNWQzNTA0ZTAwNGY1YTcxOTJhOWUzZTA3NzYwNDczOTYyYmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgzMmIxYmFjZTZmNzZlZWI4OTZkNjczZWM2NDU3MDc4ZjZlZThmNjcyMzI2ZjcwZGI2NmY3ZDQ4ZjlkMDdlYWQifQ"
         }
       ]
     },
@@ -241,7 +245,7 @@
       "statement": "When recursively collecting source files, the builder skips all symlinks and any path that resolves outside the selected root, preventing a committed documentation-tree link from bringing host content into build artifacts.",
       "evidence": [
         {
-          "resource": "repo://pipeline/core/builder.py#L1054-L1085",
+          "resource": "repo://pipeline/core/builder.py#L1155-L1186",
           "version": "repo-lines-v1:sha256:17f2adb13cf2184eeb80d9ac018f4e3a467d710045ca4fec27158cc73b98bac1:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxYmNmM2JlYzg0Y2M0MDFiYWM4NjhiZjAwOWM5MmE4NmQ0MjIyOTE2NDkxMjJlZDY3NmQ1NTQxNTdiMTkwMTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5YjE4ZjJlMDBlYmJlNWIxNmM4Y2I0M2QxMmEzYzAxYTIwYjJiMzZjMTNiYjUyYjBmYmJmNzUwYTgzNWI4NTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRhZGFmYWE5Yjg3MWY1MGNiYjQ1MDg1YTMxM2Q0Yjk0ZjI1ZDM4NzAzMDYyZWRmZjcxZTlkNjEyMjRlZDRlZTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjOTkxOWYwOGQ4ZTY0MWI1ZjIwN2YyYmQ3ZmU0ZmJmZDFkYjQzZWI2MjJmZTYyYzlkYWQzZDNkYzdhOWVjZmYifQ"
         }
       ]
@@ -267,6 +271,6 @@
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-10-23T08:20:30.474Z"
+    "at": "2026-10-28T08:15:40.330Z"
   }
 }

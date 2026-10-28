@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:8dbb2305f20fe28f44afa25c895f5073e3314496b21755e8a9f21ef4aa7e6a6b",
+  "pageVersion": "sha256:c89285dd668559e845655783b8c2dd8d87cde823a135480875c35069c955f365",
   "claims": [
     {
       "id": "claim_6b606f729d484864a0823a7cb21e69a9",
@@ -117,16 +117,12 @@
       "statement": "The OpenAI tracing guide consumes a shared reusable snippet, which requires tracing and API-key configuration and directs agent-based users to set both agent variables; the quickstart uses a shared trace-ingestion snippet and generated Java/Kotlin sample fragments alongside authored Python and TypeScript examples.",
       "evidence": [
         {
-          "resource": "repo://src/langsmith/observability-quickstart.mdx#L58-L76",
-          "version": "repo-lines-v1:sha256:519d3a7954c180500825826c2daf18fee7536ba4f7d58f67bc95481af59c3642:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU3MmYyY2YxMTA5ODI3ZjI3Yzc1Mjc2YzJlYzM4ZmZhMzlmOGZiNTliZGI0MmU3MjMzZGY1MTlkOTkyOTY3OTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzYzEyNTE0NjYwMjJlN2I0MDI0ZmVlM2Q4ZTgyMDFlOTgwZDA3ZGQ0NDdkYjhhOTMzNjlhZGZkZWNkZGRjZmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk1ZmIxZmQzNDVkMjhmNjk5NjhiODliNWEwMDgwYzc0Yjk3Y2YxN2I2NTIxN2YyMGY1ZTRlOGMzZTdhNjA0MmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdmODhiY2U4Yjk1NTcwZjRmNjk5OTQ1M2YyZTEwNWJiNmRkYjg2ZGIwOTcyNzczYTlmMjY4NTU5MTRhYmRjMWIifQ"
+          "resource": "repo://src/langsmith/observability-quickstart.mdx#L104-L146",
+          "version": "repo-lines-v1:sha256:a371ca831f9d246116ca1facebb69c8cee69a31567662f322d7f0264a8136590:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU3MmYyY2YxMTA5ODI3ZjI3Yzc1Mjc2YzJlYzM4ZmZhMzlmOGZiNTliZGI0MmU3MjMzZGY1MTlkOTkyOTY3OTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY0ZTk2YmZjNTg2MzM5Zjg5OWViMGJiZWM3ZmMzZGQ0OTlmMTA1Zjk1NjkyMDBhM2MzZWZlZGFmM2FmYjUxN2MiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBmY2U3MDQ5MzM4NDVkNmIwN2ZlZDM2Mzg4NzMwNjcwYzdlN2E3NzYxYWE1MDlhZjg1MWZlOTcyYWY3NWE5YzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdmODhiY2U4Yjk1NTcwZjRmNjk5OTQ1M2YyZTEwNWJiNmRkYjg2ZGIwOTcyNzczYTlmMjY4NTU5MTRhYmRjMWIifQ"
         },
         {
           "resource": "repo://src/langsmith/observability-quickstart.mdx#L8-L11",
           "version": "repo-lines-v1:sha256:e959f7cf156a6cbec0fd834a485880fef63f9611d6b04cc8c063f8e61fe6afff:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDY1ZjExMzY4NDU2NDU4NzQzMGE4NDQ1MGNkNDdlMmU2ZmU4NjI4MzdmYWRjZDIxNDc3MWE4YmNiNjljYzk5MyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDMwZTA3M2M4NGI2ZmJlZTQ5NTc1ZTkzZmMzMDNlYjY4M2M0ODg4YTM5ZDViNGFmODkxMDQ3YjhmZWVkODEwOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiM2IwZmVlNWM0ZGRlYWI4ZTMzYWVkZGE3OWNkMTc0ZTI0MTU2NzVjNzM4ZWJhODhiNjgzMDJjMjliYzBiM2U2NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGViYzBiY2UxZDczMzBjZGY5ZThiZjMwMjRiZTMzNjM5OWMwMTE3Nzk1NTNjNmY4OWJlYWE3MmFiM2U2NWZkZCJ9"
-        },
-        {
-          "resource": "repo://src/langsmith/observability-quickstart.mdx#L87-L159",
-          "version": "repo-lines-v1:sha256:b2549fb078c0385257265f0f424964201803a491119e2d753cc3d802311ad803:eyJzZWxlY3RlZExpbmVDb3VudCI6NzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUzYzQ1MDFiZTdkYThhYjUzYzQxMzAxODJjNjRlNzJlNDg5ZDZlMDI0MDA4YWYzYzRlYWYwOGZmNTkxY2E4Y2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU3OTVjNDM1MTJmODMwNjBiZjdiMGEzZjM5MDMxMDQ5NjgwNjgzZDFhOWMyZThlMzkwMTE4ODBlYjUxNWQ5ZDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRkNzAxN2EyN2YyOGFjMWM3NWZlM2M4ZTBhMjAxYzZjZDQxOTJmN2RjMjU3MWQ2NGJhNzQ2MTdmNzNhZGJhMDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhhZTVjNWExMzkyMDUzMjFlYjI0ZTQ1Yjg0ZmYwNWZjMjRlNzlmMDgyMjZlNmQ5NjJlYTAyZjg0M2YwMGE5NjgifQ"
         },
         {
           "resource": "repo://src/langsmith/trace-openai.mdx#L1-L10",
@@ -148,7 +144,7 @@
         },
         {
           "resource": "repo://src/snippets/langsmith/otlp-agent-addressing-note.mdx#L1-L11",
-          "version": "repo-lines-v1:sha256:d3b8fc65a925320648122c95eebf1edf0b1f2a8d7b0b1008a8e20621ee82236a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE1YTY2ZjhjZGRmOWRhYTI3OWI1NDI5OTBhOGE2MDg2YjZhMzM1ODQ1M2Q5NzI3ODRlNWNjMDU0ZTNjMWFjM2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBmYTU5MDlmY2Q1ZWRhNTg0ZjZhNzQ0Mzg1NDVkMDliZTRjNzE1YmE0ZmQzODAzNzMzYzEzZmJiYjE1OGE4YmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE2MDM1ODA3NjAxZTE0MWM3ODU1YTc2ODhiODk5ODg5ZDhlZWU4NDYxOTQwOWUyMDhiNTRlZmJlMjRmYTk1MjUifQ"
+          "version": "repo-lines-v1:sha256:b41081fbe2333c9bb82328417325ba3de152e3f898594c0155eff7ed51b9b9b2:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE1YTY2ZjhjZGRmOWRhYTI3OWI1NDI5OTBhOGE2MDg2YjZhMzM1ODQ1M2Q5NzI3ODRlNWNjMDU0ZTNjMWFjM2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQyNzlhYzlkYzFkZDQyNDRmOGI0YzM3MTljMTM1YjAxMDg1MWZlN2RjMGVjOGJhODRlMmIwYzEyYWU1NjY0N2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE2MDM1ODA3NjAxZTE0MWM3ODU1YTc2ODhiODk5ODg5ZDhlZWU4NDYxOTQwOWUyMDhiNTRlZmJlMjRmYTk1MjUifQ"
         }
       ]
     },
@@ -213,10 +209,108 @@
           "version": "repo-lines-v1:sha256:35983636570ad4233a2352e1a1e0c7df84d55d6202d498f9fdd1725cbacbdfec:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhkMWVjMjFjMTc0MGFhMzM4ZDFiZTkwZjUxZWYyZjkyMjFlOTgwMWE2MjY1MjFhNWJlZGU0ZDc0ODBhNWNhYWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUyYWQ5OWJmNzE0ZWI4ZjY1ZGYzMjExNTNhYTM5M2M1MmQ2YjQ5NjNmMzRmMTJkYTI4ZjYzNGZkMTI0YmRhMDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjllMzU2MTVlMWNkZGFiMWZkYjdhNzFmOWYzYTkxN2QwZmE4NWM2MDE4MjY4ZjZmYTg1MGNmZDMwNzE2OGFkZjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJkOTNmNzc3NDYxOThkYTk5OGQyNWM3MjFlNzgzMjQxODZiZDJmNmUzZDk2MGU2NjAxMmVkZWMzMWY3ZDk3NmUifQ"
         }
       ]
+    },
+    {
+      "id": "claim_cbbe63ef50dc47ab872510e4f8ad135b",
+      "statement": "Managed Deep Agents uses the open-source Deep Agents harness with a LangSmith-managed runtime: authors declare a project’s agent logic, while every deployment runs on Agent Server and receives its threads, runs, streaming, and MCP endpoint without the author operating that server.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/managed-deep-agents-overview.mdx#L137-L140",
+          "version": "repo-lines-v1:sha256:8a9bc32263883ad23dce147d590b52451c2fdbf3b312f31ec1627eee805b8681:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWQ4MDZlZDY1Njg4MWNmZWUyZjI5ZWI2ZTc2MDkzMzM0MTQyY2M3MTlmNjRhM2VjYTAwZjg1ZTYwNDFiNDcxMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTQ0NjY4OWMwNjhiNzg1MzQxMDRkZWJlYmU5ZjZhMzJmYTQ2ZmFlMzIyY2NlMTU5YTFjMzc3ODg2MWYxNjM4MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTExNmE2MjA2NGNiODI2MzBhMjhmYTQ0NTQ2Y2Q0MDJiZjMwZDE4Yzk5ODg3Njk2NjEzNGFkMTVlZmViZGMwNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWQ2ZTIxMjI2NmEzYTAwYjk2ZDZmZDEwMDBhNzhmOGUyNjExNWU0YzM0ZWNmMDlmZGFjZWQ1YjhmNDUxMTRhOSJ9"
+        },
+        {
+          "resource": "repo://src/langsmith/managed-deep-agents-overview.mdx#L182-L202",
+          "version": "repo-lines-v1:sha256:125caffdf363a0e02382a12b6b10f3ee7ec6a30bbc65de5e1157a5e01eeeb8a1:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzMWQzMjUzOWFlODQ0NDgxZjQ1N2VkNTZkZmRiZjJkNDhhYjQ1YTJiOGEyOTlkNmVjODViZDNhZWY4MTA3OTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc0N2M3MjM4ZWY2ODlmOGE0YTVhZWNjYmI0MmUzMGFkOTdlZDg0YmM5MDM2NTNhOTQ5Y2U2YTFlNzJlM2EwNTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY3OGRiNzk0OWJiNzBiODhlYTgyYmM4YmEyYWQ5ZDBlNDAxMjFkOTg0YWExMTE3YTc3M2IxNmUwZTlkMjViZTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIxNDdiMDdiZDQxNzU4ZGY2N2ZlOTljZmM5NjczMWFjZGU2YmNlOGY0MzQxZTFiNmU2NmJmYjM4YzA1MmNjYWMifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/managed-deep-agents-overview.mdx#L7-L12",
+          "version": "repo-lines-v1:sha256:c578c02be224769beb29f168910babaf4c1f4ee3c0e32e08ea2ed8d0f1c29578:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzBkMjcyMmVhMWM0YTc5NmEzZGY1YWNkZjNhZmYzOWZlYjMzNWIxMGU4YjBiNGQ1MmY0OWU1YzlmMWQ4YmY4YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMGE0YjVjMGU4ZTIzNzBkZDc2ZDdkNzBhOGVlZWNiODRiMTMwNTE2NmRmYjkxY2U0NTM3MTg3ZDk4OGEzNzgyYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiM2E4NzUwYjY5MjUxZDQ4ZGYyZDcwM2NkNzA5M2QwMWE3ZTU1ZDdjMGZjNWYxMzQwY2YzYjlhYjc2NzY1ODUwMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjJkN2VkMDRmMDc0YjMxZjE0MjMyMGMyMjRmNWIzMmQ4NTU5Zjg2Y2ZhODIyYTQ0YWNkOWZiMDk4NTdhZDkxYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_462b4f19848c4b62b4e8ff350503123c",
+      "statement": "The Managed Deep Agents definition APIs return declarations for the managed runtime to compile, whereas create_deep_agent and createDeepAgent return compiled agents that the application hosts with its own backend, store, checkpointer, and server.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/managed-deep-agents-overview.mdx#L182-L202",
+          "version": "repo-lines-v1:sha256:125caffdf363a0e02382a12b6b10f3ee7ec6a30bbc65de5e1157a5e01eeeb8a1:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzMWQzMjUzOWFlODQ0NDgxZjQ1N2VkNTZkZmRiZjJkNDhhYjQ1YTJiOGEyOTlkNmVjODViZDNhZWY4MTA3OTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc0N2M3MjM4ZWY2ODlmOGE0YTVhZWNjYmI0MmUzMGFkOTdlZDg0YmM5MDM2NTNhOTQ5Y2U2YTFlNzJlM2EwNTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY3OGRiNzk0OWJiNzBiODhlYTgyYmM4YmEyYWQ5ZDBlNDAxMjFkOTg0YWExMTE3YTc3M2IxNmUwZTlkMjViZTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIxNDdiMDdiZDQxNzU4ZGY2N2ZlOTljZmM5NjczMWFjZGU2YmNlOGY0MzQxZTFiNmU2NmJmYjM4YzA1MmNjYWMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_35b1d78062184aa99786b4f9ad63ae24",
+      "statement": "mda dev compiles a Managed Deep Agents project into a local build, uses a local Context Hub mock and language-specific development server, opens Studio, and does not create or update a hosted deployment; changed project files require rerunning it to recompile.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/managed-deep-agents-local-development.mdx#L45-L59",
+          "version": "repo-lines-v1:sha256:ac7b15fc0c2dd58dc85312f2f7254d553c7d3da426ee2974792025f75baf82e7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY2NTM5ZjUwNTgzYWM3NDdiYmQ2MzY4MmYzODNkMTRhOGU3Y2VkNjE1YTRjMTdkMzg4OWMyM2RkZDEyOGUwYTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYyNWM3ZTM5OWYxYjY2NGMxYmE2YTFjNDNiMWZmODYwZjcxZDk0OThkODY0YWI1ZmY2ODY5ZmJkMTEzODc5NTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcwZmViNGQwNzllMjIyY2QwMTMxYzViYzc2NzI3Y2E3ZWIwNTQzYWYyMmMzMzg4NzhiYmIyMjBmMWYwMjhmMDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA5N2RiZGVkZGRiNmFlZmU0MGExZGQxNzEzOTMxYTgwMjdmMmViYzE4ZTAwMzdhZjg5MDFhMzQ2MmYxOWJlYjIifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/managed-deep-agents-local-development.mdx#L9-L10",
+          "version": "repo-lines-v1:sha256:ecb5e4246c871c56429e02f0ee9f3e63b413463f3eea53e71b1cbbac7750e7be:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzhjYTgxZTQ3NjA4MTAxYmM3MDUzMzgwYWRmMzkwNDllYTY4ODQ4NWU1Y2MzZGMwZTI2NTIyZTU4OTA4ZDY5NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjRkMzI2MmUxNjBlNzJlYjU1MTRkOGZlYTEzNGE2Y2Y1YmYzM2Y1MDcwYWU2ZGIyMTgyNTAzMDFjOTM3MDcxZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYmYzNjU5MTRjNTY5MTk3NjNhNzhiOGVmMjlmYzI4MGNjMDg0OTUzZmU0OGI1YTU3OTcyZDlkNmU3ZTk0NzFiMSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_129ecd3029d246b7acd81c0a11066341",
+      "statement": "Managed Deep Agents local runs target the Local environment and require the agent record to exist for traces in an agent-based workspace; mda deploy creates that record while mda dev alone does not, although Studio chat still works while traces are rejected.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/managed-deep-agents-local-development.mdx#L61-L67",
+          "version": "repo-lines-v1:sha256:f54b4985dba6951aef3689641c1b929e9733448e3390e0174111d96ec6d44041:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjY5MTliMDQyNGRiMDMzMWZjZGMyYTUxZjRjYzY0ZGFhZWUzMzFjNTc2YjBjMTZlNjA0MGEzMmMzZmRlYmNhMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjVlNWE2YmE4MTg0NDZjNGFiZmNlZjAxMzVjNmJjYzYxMGY5ODNlZmFhMGEwY2ZjMmUxZWQ1YmZlNmE0YjBjMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzhhM2RhNzQ1Yjg1MzNiMTYzY2ZmNjg1MjZkOWI5YzRmN2Y3OGFhYTNjOWRhZDY5ZmY1MWQzNWU1ZmFlYzFmOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGIzNzZkOGRmZjUzOTYwOGVhNzcyMTAxZjg2ZmQxMGFkZTkxZTc2MGY2OTgwYzc0MTVjMDdlOWEwMjEyNGRiYiJ9"
+        },
+        {
+          "resource": "repo://src/langsmith/managed-deep-agents-quickstart.mdx#L331-L342",
+          "version": "repo-lines-v1:sha256:9c7c2e03f1b1a9fb1d5bc9d7e5a2157dc16e89fa866aea20d18af9682d34f885:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI2N2Y2YzQ5MTE5MzVjZmI0OWYzOGJmZTdiMGY0NDVmMTJkYTFlZDI5MTU2MGZiMjc4ZGM5MGJlMGRiNWFiYjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRhNzI0ZTdiYzU3MjAzOThhOWNlZjA5MWZkMjhiODQ3ZGY3OGYxNmQxY2M4ZmQzZGNkZGE5ZTUyNGE5ZGMyN2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcwZmViNGQwNzllMjIyY2QwMTMxYzViYzc2NzI3Y2E3ZWIwNTQzYWYyMmMzMzg4NzhiYmIyMjBmMWYwMjhmMDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU2OGMyM2JlYTkxZGMwZTI1ZTlhMDEzYWJkNTNlYTliM2RmY2Y5NTgwNDczZjFmNjE5ZmIxYjkwYTA3M2E2M2IifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0b5d891006c14448b0f3c8b0a94b53e1",
+      "statement": "A Managed Deep Agents deployment exposes its Agent Server MCP endpoint at /mcp for Streamable HTTP clients, while an MCP connector is the opposite direction and imports remote MCP tools into the agent; deployments can use both.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/managed-deep-agents-mcp-endpoint.mdx#L17-L27",
+          "version": "repo-lines-v1:sha256:547eb040a98b97d931238b06f927bab64ec9749ba688634522b169ebb820b5cb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc2ZGFhNzMwMmU5MWZlYWQxMWZiNGM4ZjY5YWJlMDI4MWRkYWQ1N2ZlNGY2NDljMmUwM2E5OWE0NDkzNDllOWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUxZDhjNTBmMzRiZTRlOTI1NTNjYTQ1YzJmYmRhY2ZlN2JhNWNiZjhjYWQyNjJiYTVkZGY1NzA3M2Q3YWEyZWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFlOGU1YmFiY2EyN2E0NjQ0MDUyY2NmMjBlNmNiODhmZmM3ZGU0Y2FiZjU3YzU4MmViZjZiYTk5N2U2ZjM4NzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM3YjdkYzU3OGQ0YzE1MmZhYjNkNjFhMDI3MjE2NjBhNzQ0OTYxZDM5OTgyZmJhYzRmZjY2MmEzZGE3NDc0M2EifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/managed-deep-agents-mcp-endpoint.mdx#L9-L15",
+          "version": "repo-lines-v1:sha256:ee42d4350f854544f2affb489cce3a2bce66670d153375435aa4dc3d5dbb7eca:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjViMGEzZjIxZmQ2MDEyMTEwODE3MGYyNTI1ZGU3MDNhNzJjMDU4YWFmOTQ2YWE0MGVkZmZjMDY0MmRjOWRjOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTlkY2I5NTI4MTNjNGMzZDQ4NWM2ZWQ4YTIwNDM0MGQ5ZGZhZjFkNTZiMTg2N2MzNDdkZmYxMWZjNWExZjkwNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjRkMzI2MmUxNjBlNzJlYjU1MTRkOGZlYTEzNGE2Y2Y1YmYzM2Y1MDcwYWU2ZGIyMTgyNTAzMDFjOTM3MDcxZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWI2OTQ0YjdlZmVlNjhiZTQ3OGU0YTUyNzY4N2MxYTIxOGYwNmNmYjM2NzQ3ZjYzNjI4OGMyYmJmY2RiOTQyMSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_98b45b8bd4ea491e87b2cbae3666431d",
+      "statement": "The deployed Managed Deep Agents MCP endpoint uses deployment identity credentials and the default LangSmith API-key mode requires a key from the owning workspace, while the local mda dev endpoint requires no credential; separate MCP calls do not share session thread state and optional durable memory is shared by deployment callers.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/managed-deep-agents-mcp-endpoint.mdx#L149-L153",
+          "version": "repo-lines-v1:sha256:e98a3b9553eeee848806df710dae43d89f0c6dc6191cae426fe75ba86395dca4:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWUxN2QyZTJjOTc2ZTQxYTM5OWY3MmNlNmQwMzY2ZjA4MWQ2MzM2MjJmMDRjM2VhMzI3ZGQ0ZDYzNDU0ZjFkNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMWYzOGZlZWM3NTYxNTI4ZDA3OTVjMDk2Mjc2NDBiYTA0ZGMwYTMzNDZlNjVkMTliYzFkY2M5ODM1Y2JiNmI5NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDc2ZjlkNjAwMzNmMDY3MDFiOWQzZGZhMjNlZWJiZTAyOWI1OGI1NTUzNzBiNDA4YzM0ZmVhODMzNmIwNGRmZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzJjYzcxZDM2MzYxNDNkYTdiZTVlMmIxNWRjYjNhMWQ1YTg2ZjYwYWRiMWFiZTkzNWNmZTJiMGVhNmRlNDQyZCJ9"
+        },
+        {
+          "resource": "repo://src/langsmith/managed-deep-agents-mcp-endpoint.mdx#L29-L56",
+          "version": "repo-lines-v1:sha256:edc10ea69ea14798c8a973f046588d451dbefc6ec977bbfc6fdaacdd8632a891:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzYzIzZTk3ZDcwM2I1MjE1N2UyNGMyZmM4MWI5ZWFjODk1MTVhYTMxZWFmZjYyMzUxNjc3NGEyZWY4ZTJiYTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2MDM1ODA3NjAxZTE0MWM3ODU1YTc2ODhiODk5ODg5ZDhlZWU4NDYxOTQwOWUyMDhiNTRlZmJlMjRmYTk1MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJmOGIzMzZkNzk2MDQ1ZjI0YTYxYTlmODA2Y2JhYjQ0ZDI1ZWU5Mzg3YTI0OTRiNGI0ZDgwNjZjYWQ0MTFmMzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5OGQxNDcwMWFkZDJlM2U0MzNmNjFhOTJkNmNmNjdiYjJiODgwY2NhMGI5MThjNmE3OTYzMzhiNTVlZTQ0ZmQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_bfebee6fa6634004a6c413c598503e38",
+      "statement": "Managed Deep Agents documentation is configured as a beta, language-versioned Build navigation surface: docs.json lists Python and JavaScript managed-agent pages, and the repository guidance specifies that authored managed-deep-agents pages emit language-prefixed routes while unversioned URLs redirect to Python.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L137-L140",
+          "version": "repo-lines-v1:sha256:a6abb06c4f0f08e50c620b13d3d214c84a676ad3a66d2f89ef2dfee8e0261593:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDA1YzJhNjJmYmQ2MjY5ZWJiMWNlN2U5Yzk1MjNjZmIyMjc4MTM1M2E0NWU1ZDk1NDJjYTQ1ODIzNDM4OTNkZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODBhMTMxNmFlNjQzNWNlMTU1MjMxOWU1Mjg5YzUzNDJmMGRhNjZlNzk5ZWU1ZDE3OGNjNWZjNzQ1NjFiZjc0NiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzRlMDhjNTlmOWQ3NjA4OTk5ZTQ0OTg0NTdmOGViOGEyZjk0NmQ2Mzc1ZGE5ZjljNTAxN2U1ZDVkYjAzM2QyYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjkxNjg1M2ZmOWM1OTAyZTYxYWZjOTZkYTAwYjNiY2E4ZTI4ODFhMzBhNjJjZTU0YWE5ZDkwMzZkZDM2ZGJjMiJ9"
+        },
+        {
+          "resource": "repo://src/docs.json#L170-L239",
+          "version": "repo-lines-v1:sha256:f32435c323dab9082f2d4ad3908f04b98ecaa09dcb5902c732193fcbaf2aa426:eyJzZWxlY3RlZExpbmVDb3VudCI6NzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA5ZDc1MGFmODdjYmYzOWEwZmU4Y2ZiMGUzM2QwZjRiN2IzN2FjMjhkNDA0N2Y4NGJjNmNjMjRmYjA3Y2IzZGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFkN2VhNDVhZjJmNzNkZTk2Y2RmNjY0ZGU3NTk0YmRjOGFlZThjN2YxNDA5MWVjYzY1OTlmODgwNGU4ZGY3MGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcwMzIxY2E1ZTdkOGU0OTlkZGYyNzMwODIyZWY0ZTk1YzhiZmRhMDE4NGJkNmNkY2Y2YWUwYjc5YzJhNDBkOGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU3ZTdmNjc0MDI5ZjJmMDY0ODhkZjMwNzk5YjgwYWNkNzg3OWRlN2U4MTM5MTA4YzA3MDY4MDQzNjYzNWY4OWMifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-10-27T08:21:38.674Z"
+    "at": "2026-10-28T08:15:40.330Z"
   }
 }

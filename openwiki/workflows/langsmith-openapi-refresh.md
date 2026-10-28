@@ -20,10 +20,10 @@ sources:
     resource: repo://src/docs.json
   - id: openwiki-source-38d325b9c51f3c8dfd528917
     resource: repo://tests/unit_tests/test_filter_mint_broken_links.py
-generated: { by: "openwiki/0.4.3", at: "2026-10-23T08:20:30.474Z" }
+generated: { by: "openwiki/0.4.3", at: "2026-10-28T08:15:40.330Z" }
 verified:
   - by: openwiki/0.4.3
-    at: 2026-10-23T08:20:30.474Z
+    at: 2026-10-28T08:15:40.330Z
 ---
 
 # LangSmith OpenAPI Refresh
@@ -117,7 +117,7 @@ There is no repository command that proves Mintlify rendered every LangSmith RES
 
 ### Focused test boundary
 
-The focused unit coverage in this area is the link-report filter test. Its OpenAPI fixture covers the Agent Server route prefix, while the implementation independently excludes the LangSmith REST `smith-api` prefix. The test preserves the exemption for that deployment-generated OpenAPI-route report and retains an ordinary broken-link failure; it does not render endpoints or test the platform processor, remote fetch, GitHub branch/PR operations, or deployment-generated REST routes.
+The repository's focused unit coverage for this workflow's local-validation boundary is the link-report filter test. Its OpenAPI fixture covers the Agent Server route prefix, while the implementation independently excludes the LangSmith REST `smith-api` prefix. The test preserves the exemption for that deployment-generated OpenAPI-route report and retains an ordinary broken-link failure; it does not render endpoints or test the platform processor, remote fetch, GitHub branch/PR operations, or deployment-generated REST routes.
 
 Run it with:
 

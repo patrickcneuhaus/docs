@@ -5,12 +5,10 @@ description: How the Python pipeline turns authored source files into the dispos
 tags: [build-system, documentation-pipeline, mintlify, preprocessing, content-routing]
 verified:
   - by: openwiki/0.4.3
-    at: 2026-10-23T08:20:30.474Z
+    at: 2026-10-28T08:15:40.330Z
 sources:
   - id: openwiki-source-012f2c78e3b1446dfc35803f
     resource: repo://Makefile
-  - id: openwiki-source-6e6efa1569f158fcdb678ef0
-    resource: repo://pipeline/cli.py
   - id: openwiki-source-41f7c907e42a5efd3b3405cd
     resource: repo://pipeline/commands/build.py
   - id: openwiki-source-b481a230af378c0c50ed9994
@@ -19,21 +17,9 @@ sources:
     resource: repo://pipeline/core/builder.py
   - id: openwiki-source-636af982f42ea94123d2d7e9
     resource: repo://pipeline/core/watcher.py
-  - id: openwiki-source-17f3856bce97f37118963062
-    resource: repo://pipeline/preprocessors/handle_auto_links.py
   - id: openwiki-source-06a4c757b1153b7de4f47a0e
     resource: repo://pipeline/preprocessors/markdown_preprocessor.py
-  - id: openwiki-source-3ae8d89866d72418f1bdab6b
-    resource: repo://pipeline/preprocessors/utm_links.py
-  - id: openwiki-source-05ccef8d4cf1698187f20464
-    resource: repo://pyproject.toml
-  - id: openwiki-source-23775c3de52f3ab95a13cb8b
-    resource: repo://README.md
-  - id: openwiki-source-24e5f74f0f40e9bfd381871f
-    resource: repo://tests/unit_tests/test_builder.py
-  - id: openwiki-source-16b92823fdcb07d686f2e27f
-    resource: repo://tests/unit_tests/test_watcher.py
-generated: { by: "openwiki/0.4.3", at: "2026-10-23T08:20:30.474Z" }
+generated: { by: "openwiki/0.4.3", at: "2026-10-28T08:15:40.330Z" }
 ---
 
 # Documentation Build System
@@ -47,7 +33,7 @@ generated: { by: "openwiki/0.4.3", at: "2026-10-23T08:20:30.474Z" }
 ```mermaid
 flowchart TD
     Source["Authored src tree"] --> Clear["Clear and recreate build"]
-    Clear --> Oss["Build OSS language variants"]
+    Clear --> Oss["Build OSS language routes"]
     Oss --> Unversioned["Build unversioned OSS and LangSmith"]
     Unversioned --> Managed["Build Managed Deep Agents variants"]
     Managed --> Shared["Copy shared inputs"]
@@ -55,26 +41,29 @@ flowchart TD
     Overlay --> Mint["Mintlify reads build"]
     Source --> Watch["Development watcher"]
     Watch --> Incremental["Rebuild changed source files"]
-    Incremental --> Reload["Touch emitted files"]
+    Incremental --> Reload["Touch expected output files"]
     Reload --> Mint
 ```
 
-This shows the authoritative full reconstruction and the narrower incremental preview path.
+This shows the authoritative clean reconstruction and the narrower incremental preview path.
 
-A full build runs in this order: ordinary OSS Python output, ordinary OSS JavaScript output, unversioned Deep Agents Code, unversioned OpenWiki, ordinary LangSmith, Managed Deep Agents language variants, shared files, then the npm component overlay. The overlay intentionally wins over same-destination source copies. The builder does not generate `llms.txt` or `llms-full.txt`.
+A full build runs in this order: OSS Python output, OSS JavaScript output, unversioned Deep Agents Code, unversioned OpenWiki, ordinary LangSmith, Managed Deep Agents language variants, shared files, then the npm component overlay. The overlay intentionally wins over same-destination source copies. The builder does not generate `llms.txt` or `llms-full.txt`.
 
-## Routing families
+## Source families and route selection
 
-The builder selects output paths from source location rather than mechanically mirroring the source tree.
+The builder selects output paths from source location and, for shared OSS Markdown, from `docs.json` navigation rather than mechanically mirroring `src/`.
 
 | Source family | Generated location | Rendering behavior |
 | --- | --- | --- |
-| Most `src/oss/` | `build/oss/python/...` and `build/oss/javascript/...` | Built once for `python` and once for `js`. A source first segment named `python` or `javascript` is accepted only by its matching pass and removed from the output path. |
-| `src/oss/deepagents/code/` | `build/oss/deepagents/code/...` | Built once, with the Python conditional branch. |
-| `src/oss/openwiki/` | `build/oss/openwiki/...` | Built once, with the Python conditional branch. |
-| Ordinary `src/langsmith/` | `build/langsmith/...` | Built once, with the Python conditional branch. |
+| Language-specific `src/oss/python/` or `src/oss/javascript/` | `build/oss/python/...` or `build/oss/javascript/...` | Only the matching pass accepts the file and removes its source language segment. |
+| Shared OSS Markdown outside special roots | `build/oss/python/...`, `build/oss/javascript/...`, or one of them | A route listed in exactly one language navigation is emitted only for that language. Routes listed in both—or in neither—are emitted for both. Non-Markdown assets are emitted for both. |
+| `src/oss/deepagents/code/` | `build/oss/deepagents/code/...` | Built once with the Python conditional target. |
+| `src/oss/openwiki/` | `build/oss/openwiki/...` | Built once with the Python conditional target. |
+| Ordinary `src/langsmith/` | `build/langsmith/...` | Built once with the Python conditional target. |
 | Direct `src/langsmith/managed-deep-agents*.mdx` | `build/langsmith/python/...` and `build/langsmith/javascript/...` | Built for both languages and excluded from ordinary LangSmith output. |
 | Shared and root files | Source-relative path under `build/` | Built or copied once. |
+
+`docs.json` navigation is parsed recursively for `oss/python/` and `oss/javascript/` routes and cached until that file's modification time changes. This means an incremental rebuild picks up navigation edits. A directory `index` route can be represented by its parent navigation route only when a language-specific page does not own that parent route.
 
 Managed Deep Agents is the LangSmith exception. The builder emits its direct `.mdx` pages only under language-prefixed routes, while `src/docs.json` redirects unversioned Managed Deep Agents URLs to Python routes. Its language render also rewrites unversioned Managed Deep Agents links to the matching language route.
 
@@ -100,7 +89,7 @@ After source shared files are processed, the builder attempts to copy `PatternEm
 
 `make dev` installs npm dependencies and starts `pipeline dev`. Unless `--skip-build` is supplied, development mode first performs the full build, then watches `src/` recursively and starts `mint dev --port 3000` in `build/`. It returns failure for an initial build failure, an unavailable Mint executable, a nonzero Mint exit, or an unexpectedly stopped watcher. On shutdown it stops the watcher and terminates Mint, escalating to a kill after the wait timeout.
 
-The watcher queues supported create and modification events, ignores common editor backup and temporary files, de-duplicates rapid changes with a 0.2-second debounce, and rebuilds a batch in worker threads, with up to four workers. It then touches expected output files to trigger Mintlify hot reload. For an existing source file, `build_file()` follows the same routing classification as the full build.
+The watcher queues supported create and modification events, ignores common editor backup and temporary files, de-duplicates rapid changes with a 0.2-second debounce, and rebuilds a batch in worker threads, with up to four workers. It then touches expected output files to trigger Mintlify hot reload. For an existing source file, `build_file()` follows the same navigation-aware routing classification as the full build.
 
 Incremental mode is not a substitute for reconstruction:
 
@@ -118,7 +107,7 @@ For an offline artifact, `make export` requires an installed Mint CLI with `mint
 
 Whole-tree collection rejects symlinks, including symlinks to regular files, and accepts only regular files whose resolved paths stay under the requested source root. This prevents a committed link from bringing host paths into generated artifacts.
 
-Focused builder tests cover language-routing exceptions, language-aware OSS and snippet links, Managed Deep Agents dual routes, source-snippet copies, and symlink rejection. The watcher unit tests focus on filtering editor backup and temporary filenames. Extend observable output tests when changing routing, rewriting, shared-file policy, or overlay precedence.
+Focused builder tests cover navigation-aware language routing, language-aware OSS and snippet links, Managed Deep Agents dual routes, source-snippet copies, and symlink rejection. The watcher unit tests focus on filtering editor backup and temporary filenames. Extend observable output tests when changing routing, rewriting, shared-file policy, or overlay precedence.
 
 ## Related pages
 

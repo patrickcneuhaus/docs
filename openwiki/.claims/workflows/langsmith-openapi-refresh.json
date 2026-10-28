@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:50160b16f3c2d9017355a7e4d468e8c36deec045d6363b3636ddae50b394339f",
+  "pageVersion": "sha256:2ded46662b79b48448c37a3ceb1aec2f7866fd09951f9138a04ddf6b13b366f2",
   "claims": [
     {
       "id": "claim_251f8ff0a83a41aea2e20358cf54ebaa",
@@ -8,7 +8,7 @@
       "evidence": [
         {
           "resource": "repo://AGENTS.md",
-          "version": "repo-file-v1:sha256:67cdebc38a4f90f2e609b909afe9e51c666ec5cf0ae20e39a8cbbb71570968f2"
+          "version": "repo-file-v1:sha256:a5b283b6c89570bdaeff88c4bfb720791e7c1d6ca12474ae2143ef48da285819"
         },
         {
           "resource": "repo://src/docs.json#L2181-L2189",
@@ -192,7 +192,7 @@
       "evidence": [
         {
           "resource": "repo://AGENTS.md",
-          "version": "repo-file-v1:sha256:67cdebc38a4f90f2e609b909afe9e51c666ec5cf0ae20e39a8cbbb71570968f2"
+          "version": "repo-file-v1:sha256:a5b283b6c89570bdaeff88c4bfb720791e7c1d6ca12474ae2143ef48da285819"
         },
         {
           "resource": "repo://src/docs.json#L1657-L1666",
@@ -305,6 +305,6 @@
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-10-23T08:20:30.474Z"
+    "at": "2026-10-28T08:15:40.330Z"
   }
 }

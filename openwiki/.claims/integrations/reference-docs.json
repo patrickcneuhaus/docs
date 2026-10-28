@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:9cc4c5ba09df4a6ef4b644f3429c166ea9a6d1a536aba3c2f9c6cbdff3324456",
+  "pageVersion": "sha256:c3dcbb33b1e2ff7751683a2e6b266adf1838a7c1b0095a4fe780fe94dd77519b",
   "claims": [
     {
       "id": "claim_10a875a4aa8440258238851d23b2d11c",
@@ -18,7 +18,7 @@
       "evidence": [
         {
           "resource": "repo://AGENTS.md",
-          "version": "repo-file-v1:sha256:67cdebc38a4f90f2e609b909afe9e51c666ec5cf0ae20e39a8cbbb71570968f2"
+          "version": "repo-file-v1:sha256:a5b283b6c89570bdaeff88c4bfb720791e7c1d6ca12474ae2143ef48da285819"
         },
         {
           "resource": "repo://pipeline/preprocessors/handle_auto_links.py#L101-L121",
@@ -54,7 +54,7 @@
         },
         {
           "resource": "repo://AGENTS.md",
-          "version": "repo-file-v1:sha256:67cdebc38a4f90f2e609b909afe9e51c666ec5cf0ae20e39a8cbbb71570968f2"
+          "version": "repo-file-v1:sha256:a5b283b6c89570bdaeff88c4bfb720791e7c1d6ca12474ae2143ef48da285819"
         }
       ]
     },
@@ -64,7 +64,7 @@
       "evidence": [
         {
           "resource": "repo://AGENTS.md",
-          "version": "repo-file-v1:sha256:67cdebc38a4f90f2e609b909afe9e51c666ec5cf0ae20e39a8cbbb71570968f2"
+          "version": "repo-file-v1:sha256:a5b283b6c89570bdaeff88c4bfb720791e7c1d6ca12474ae2143ef48da285819"
         },
         {
           "resource": "repo://Makefile#L194-L197",
@@ -82,7 +82,7 @@
         },
         {
           "resource": "repo://AGENTS.md",
-          "version": "repo-file-v1:sha256:67cdebc38a4f90f2e609b909afe9e51c666ec5cf0ae20e39a8cbbb71570968f2"
+          "version": "repo-file-v1:sha256:a5b283b6c89570bdaeff88c4bfb720791e7c1d6ca12474ae2143ef48da285819"
         }
       ]
     },
@@ -305,6 +305,6 @@
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-10-23T08:20:30.474Z"
+    "at": "2026-10-28T08:15:40.330Z"
   }
 }

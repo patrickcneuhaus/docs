@@ -1,11 +1,8 @@
 ---
 type: documentation pipeline
-title: Markdown Preprocessing and Cross-References
+title: Markdown Preprocessing
 description: Build-time Markdown and MDX transformations for scoped API references, CTA attribution, language branches, and route-aware output. Documents fence and escape invariants plus strict source cross-reference validation.
 tags: [build, markdown, preprocessing, cross-references, language-versioning, api-reference]
-verified:
-  - by: openwiki/0.4.3
-    at: 2026-10-23T08:20:30.474Z
 sources:
   - id: openwiki-source-012f2c78e3b1446dfc35803f
     resource: repo://Makefile
@@ -29,10 +26,13 @@ sources:
     resource: repo://tests/unit_tests/test_handle_auto_links.py
   - id: openwiki-source-5255204fc494ae04cd6ba685
     resource: repo://tests/unit_tests/test_utm_links.py
-generated: { by: "openwiki/0.4.3", at: "2026-10-23T08:20:30.474Z" }
+verified:
+  - by: openwiki/0.4.3
+    at: 2026-10-28T08:15:40.330Z
+generated: { by: "openwiki/0.4.3", at: "2026-10-28T08:15:40.330Z" }
 ---
 
-# Markdown Preprocessing and Cross-References
+# Markdown Preprocessing
 
 `DocumentationBuilder` transforms source Markdown and MDX while writing build artifacts; it does not edit source files under `src/`. The pipeline lets one shared page produce Python and JavaScript variants without authors manually qualifying every API reference, route, snippet import, or CTA.
 
@@ -70,7 +70,7 @@ The preprocessing target keys are `python` and `js`; `DocumentationBuilder.langu
 
 Build routing selects those targets deliberately:
 
-- Ordinary `oss/` Markdown is emitted for Python and JavaScript.
+- Shared `oss/` Markdown is emitted for the languages that list its route in `docs.json`: a route in exactly one language navigation is built only for that target; a route in both—or neither—is built for both. Language-specific `oss/python/` and `oss/javascript/` sources have one target.
 - `oss/deepagents/code` and `oss/openwiki` are emitted once with Python selection and retain language-agnostic routes.
 - Ordinary LangSmith Markdown is built once with Python selection, while Managed Deep Agents pages emit Python and JavaScript routes.
 - Each Markdown snippet is emitted below `build/snippets/python/` and `build/snippets/javascript/`, plus a Python-default base copy for unversioned consumers.

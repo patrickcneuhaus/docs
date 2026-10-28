@@ -1,7 +1,7 @@
 ---
 type: integration boundary
-title: API Reference and OpenAPI Surfaces
-description: Separates the externally generated SDK API reference from this repository's Mintlify OpenAPI sections. Explains OpenAPI input ownership, refresh and deployment lifecycles, validation boundaries, and safe authoring rules.
+title: Reference Documentation Boundaries
+description: Separates the externally generated SDK reference site from Mintlify OpenAPI references maintained in this repository. Explains ownership, update and deployment lifecycles, validation limits, and issue routing.
 tags: [api-reference, openapi, cross-references, mintlify, langsmith]
 sources:
   - id: openwiki-source-759309714d08144a07e1b2e0
@@ -40,15 +40,15 @@ sources:
     resource: repo://tests/unit_tests/test_check_cross_refs.py
   - id: openwiki-source-38d325b9c51f3c8dfd528917
     resource: repo://tests/unit_tests/test_filter_mint_broken_links.py
-generated: { by: "openwiki/0.4.3", at: "2026-10-23T08:20:30.474Z" }
+generated: { by: "openwiki/0.4.3", at: "2026-10-28T08:15:40.330Z" }
 verified:
   - by: openwiki/0.4.3
-    at: 2026-10-23T08:20:30.474Z
+    at: 2026-10-28T08:15:40.330Z
 ---
 
-# API Reference and OpenAPI Surfaces
+# Reference Documentation Boundaries
 
-This repository builds the authored documentation site at `docs.langchain.com`. It **does not build** [reference.langchain.com](https://reference.langchain.com/python/): generated API reference for LangChain, LangGraph, LangSmith, and integration packages is built and deployed elsewhere, with separate [Python](https://reference.langchain.com/python/) and [JavaScript/TypeScript](https://reference.langchain.com/javascript/) sites.
+This repository builds the authored documentation site at `docs.langchain.com`. It **does not build** [reference.langchain.com](https://reference.langchain.com/python/): generated SDK API reference for LangChain, LangGraph, LangSmith, and integration packages is built and deployed elsewhere, with separate [Python](https://reference.langchain.com/python/) and [JavaScript/TypeScript](https://reference.langchain.com/javascript/) sites.
 
 There are two different reference integrations:
 
@@ -170,5 +170,5 @@ Change this repository for an authored marker, scoped map entry, preprocessor or
 
 - [Source Map](/openwiki/architecture/source-map.md) — repository ownership and generated-source boundaries.
 - [Mintlify Integration](/openwiki/integrations/mintlify.md) — deployment, previews, hosted artifacts, and rendered-site checks.
-- [Test Overview](/openwiki/testing/test-overview.md) — test layers and focused validation.
+- [Adding and Moving Documentation Pages](/openwiki/operations/adding-pages.md) — choose the durable source and update navigation safely.
 - [LangSmith OpenAPI Refresh](/openwiki/workflows/langsmith-openapi-refresh.md) — processor policy and refresh-PR lifecycle.

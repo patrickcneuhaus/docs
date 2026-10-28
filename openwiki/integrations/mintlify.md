@@ -38,10 +38,10 @@ sources:
     resource: repo://src/docs.json
   - id: openwiki-source-38d325b9c51f3c8dfd528917
     resource: repo://tests/unit_tests/test_filter_mint_broken_links.py
+generated: { by: "openwiki/0.4.3", at: "2026-10-28T08:15:40.330Z" }
 verified:
   - by: openwiki/0.4.3
-    at: 2026-10-23T08:20:30.474Z
-generated: { by: "openwiki/0.4.3", at: "2026-10-23T08:20:30.474Z" }
+    at: 2026-10-28T08:15:40.330Z
 ---
 
 # Mintlify Integration
@@ -69,9 +69,9 @@ The diagram shows the repository-to-Mintlify handoff, including the hosted-only 
 
 The builder establishes output route families before Mintlify reads the tree:
 
-- Ordinary OSS documentation is emitted into both `/oss/python/...` and `/oss/javascript/...` trees. It rewrites eligible `/oss/` links for the target language.
+- Language-specific OSS sources emit only into their matching `/oss/python/...` or `/oss/javascript/...` tree. Shared OSS Markdown is emitted for both languages unless `docs.json` navigation lists its route for exactly one language; in that case it emits only for that language. Eligible `/oss/` links are rewritten for the target language.
 - Managed Deep Agents pages emit only at `/langsmith/python/...` and `/langsmith/javascript/...`; `docs.json` redirects legacy unversioned URLs to Python so Mintlify does not serve orphaned unversioned copies.
-- Deep Agents Code and OpenWiki are language-agnostic OSS products. Deep Agents Code is emitted once at `/oss/deepagents/code/...`, and link rewriting leaves that prefix unversioned.
+- Deep Agents Code and OpenWiki are language-agnostic OSS products. They emit once at `/oss/deepagents/code/...` and `/oss/openwiki/...`, and link rewriting leaves both prefixes unversioned.
 
 These are builder rules, not Mintlify conventions. Choose the output family before adding navigation or links.
 
@@ -131,7 +131,7 @@ Mintlify generates `llms.txt` and, when required, nested `/_llms/` indexes only 
 ## Related concepts
 
 - [Build system](/openwiki/architecture/build-system.md) — generated-tree lifecycle and ownership.
-- [Reference documentation](/openwiki/integrations/reference-docs.md) — API-reference boundaries.
-- [CLI tools](/openwiki/operations/cli-tools.md) — command-line validation entry points.
-- [Test overview](/openwiki/testing/test-overview.md) — validation coverage.
+- [Source directory map](/openwiki/architecture/source-map.md) — authored input families and route sources.
+- [Reference documentation](/openwiki/integrations/reference-docs.md) — distinction between OpenAPI endpoint pages and the externally hosted SDK reference.
+- [Adding pages](/openwiki/operations/adding-pages.md) — authoring, navigation, and redirect changes.
 - [Local development](/openwiki/workflows/local-development.md) — developer setup and watch workflow.
